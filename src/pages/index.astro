@@ -1,66 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Nav from "../components/Nav.astro";
+import Footer from '../components/Footer.astro';
+import Light from "../assets/light-theme.png";
+
 ---
 
 <Layout title="Samuel Amat - Full Stack Developer">
+	<Nav />
+
+	<main class="flex flex-col gap-1 mt-10 font-inter">
+		<div class="flex flex-col items-center text-center h-screen">
+			<img class="w-24 h-24" src={Light.src} alt="">
+
+			<div class="text-3xl mt-5 uppercase font-bold flex flex-col gap-2">
+				<h1 class="text-white">Hola, soy</h1>
+				<p class="text-verde border-b-2 pb-2">Samuel Amat</p>
+			</div>
+
+			<div class="text-white w-1/2 m-10 text-xl">
+				<p>Soy un desarrollador fullstack con experiencia en la creación de aplicaciones web y de escritorio. Me apasiona utilizar tecnologías como HTML5, CSS3, JavaScript, React, C#, y Java para desarrollar soluciones robustas y eficientes.</p>
+			</div>
+
+			<button class="text-black font-bold text-xl bg-verde p-2 rounded hover:scale-110 transition-all ease-in-out">Conoce más sobre mí</button>
+		</div>
+	
+		<Footer />
+	</main>
 
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
