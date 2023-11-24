@@ -9,9 +9,9 @@ import Yo from "../assets/imagen.jpg"
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
 
-	<main class="flex flex-col justify-center gap-1 mt-10 font-inter">
+	<main class="flex flex-col justify-center gap-1 mt-10 font-inter fadeIn fadeOut">
 		<div class="flex flex-col items-center text-center">
-			<img class="w-auto h-72 rounded-full" src={Yo.src} alt="">
+			<img class="w-auto h-72 rounded-3xl" src={Yo.src} alt="imagen personal">
 
 			<div class="text-3xl mt-5 uppercase font-bold flex flex-col gap-2">
 				<h1 class="text-white">Hola, soy</h1>
@@ -29,3 +29,34 @@ import Yo from "../assets/imagen.jpg"
 	</main>
 
 </Layout>
+
+<style>
+
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s ease-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>

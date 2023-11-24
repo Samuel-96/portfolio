@@ -1,11 +1,57 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
+import JS from "../assets/js.png";
+import Java from "../assets/java.png";
+import CS from "../assets/cs.png";
+import HTML from "../assets/html.png";
+import CSS from "../assets/css.png";
+import Git from "../assets/js.png";
+import React from "../assets/react.png";
+import Footer from "../components/Footer.astro";
+import SQL from "../assets/sql.png";
+import Node from "../assets/nodejs.png";
+import Mongo from "../assets/mongo.png";
+import Tailwind from "../assets/tailwind.png";
+import AstroLogo from "../assets/favicon.svg";
 ---
 
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
-    <div>
-        sobre mi
+    <div class="flex flex-col items-center ">
+        <div class="flex gap-5 flex-col justify-center text-white rounded w-2/4 font-inte mt-10 p-3">
+            <h1 class="text-3xl">Sobre mí 🖐️</h1>
+            <div class="flex">
+                <div class=" text-xl flex flex-col">  
+                    <p>Me considero un apasionado por la innovación y el aprendizaje continuo en el mundo de la tecnología. Mi trayectoria incluye proyectos desafiantes donde he tenido la oportunidad de colaborar con equipos talentosos y contribuir al éxito de diversas iniciativas.</p>
+                    <br>
+                    <p>En cuanto a mis gustos soy un completo apasionado por la lectura, me gusta todo tipo de lectura pero en general la fantasía y la ciencia ficción son mis géneros favoritos, sagas como El Archivo de las Tormentas, The Expanse o Canción de Hielo y Fuego se encuentran entre mis obras favoritas. Otra de mis grandes pasiones son los videojuegos, donde he disfrutado y sigo haciéndolo con sagas como Dark Souls, Final Fantasy o Xenoblade.</p>
+                </div>
+
+                <div>
+                    <img class="h-52" src="" alt="">
+                </div>
+            </div>
+
+            <h1 class="text-3xl ">Mi stack tecnológico 💻</h1>
+            <div class="grid gap-5 grid-cols-6 p-10 bg-stone-800 rounded shadow-lg">  
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={JS.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={Java.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={CS.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={HTML.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={CSS.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={Git.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={React.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={SQL.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={Node.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={Mongo.src} alt="">
+                <img class=" h-16 hover:scale-110 transition-all ease-in-out" src={Tailwind.src} alt="">
+                <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={AstroLogo.src} alt="">
+            </div>
+
+            
+        </div>
+        <button class="text-black font-bold text-xl bg-verde p-2 rounded hover:scale-110 transition-all ease-in-out m-5"><a href="/proyects">¡Echa un vistazo a mis proyectos!</a></button>
+        <Footer />
     </div>
 </Layout>

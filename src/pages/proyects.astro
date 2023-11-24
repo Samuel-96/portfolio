@@ -2,12 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Proyecto from "../components/Proyecto.astro";
+import data from "../proyectsInfo";
+
+const bookhub = data[0];
+const meteolocal = data[1];
+const webcam = data[2];
 ---
 
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
     <div>
-        <Proyecto/>
-        
+        <Proyecto comp={bookhub.imgComp} phone={bookhub.imgPhone} nombreProyecto={bookhub.nombre} descripcion={bookhub.descripcionEs} tecnologias={bookhub.tecnologias} liveDemo={bookhub.liveDemoUrl} repositorio={bookhub.repoUrl}/>
+        <Proyecto comp={meteolocal.imgComp} phone={meteolocal.imgPhone} nombreProyecto={meteolocal.nombre} descripcion={meteolocal.descripcionEs} tecnologias={meteolocal.tecnologias} liveDemo={meteolocal.liveDemoUrl} repositorio={meteolocal.repoUrl}/>
+        <Proyecto comp={webcam.imgComp} nombreProyecto={webcam.nombre} descripcion={webcam.descripcionEs} tecnologias={webcam.tecnologias} repositorio={webcam.repoUrl}/>
     </div>
 </Layout>
