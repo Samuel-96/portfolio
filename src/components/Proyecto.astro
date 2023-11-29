@@ -4,7 +4,7 @@ const {comp, phone, nombreProyecto, descripcion, tecnologias, liveDemo, reposito
 
 <div class="flex items-center justify-center mt-10 mr-20 ml-20 mb-10 p-2">
     <div class="flex flex-col items-center justify-center w-10/12 h-1/2">
-        <h1 class="text-3xl text-white font-inter font-bold">{nombreProyecto}</h1>
+        <h1 class="text-3xl font-inter font-bold">{nombreProyecto}</h1>
         
         <div class="flex items-center">
             <div class="flex border-b-2 pb-3 gap-52 rounded items contenedorProyecto"  style={phone? ' ':'flex-direction: row-reverse;'}>
@@ -13,7 +13,7 @@ const {comp, phone, nombreProyecto, descripcion, tecnologias, liveDemo, reposito
                     <img class="max-h-96 max-w-56 -ml-16" style={phone? ' ':'visibility:hidden;'} src={phone} alt="imagen del proyecto en un móvil">
                 </div>
 
-                <div class="flex flex-col text-xl justify-between font-inter p-3 text-white">
+                <div class="flex flex-col text-xl justify-between font-inter p-3">
                     <div class="flex gap-10  flex-col">
                         <p>{descripcion}</p>
                         <div class="flex">

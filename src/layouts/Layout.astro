@@ -32,11 +32,24 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+
+	html.light{
+		color: black;
 	}
+
+	html.dark {
+	background-color: #13151a;
+	color: #fff;
+	}
+
+	.dark .nav-links a {
+	color: #fff;
+	}
+
+	.light a{
+		color: black;
+	}
+	
 	code {
 		font-family:
 			Menlo,
