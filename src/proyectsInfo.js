@@ -53,12 +53,12 @@ const data = [
 
     {
         nombre: "GameCore Android",
-        descripcionEs: "Aplicación de gestión de videojuegos desarrollada en Android. La aplicación permite a los usuarios crear una cuenta y buscar videojuegos para añadir a su colección, dichos videojuegos podrán ser valorados, compartidos y etiquetados, también hay un calendario donde se podrán apunta lanzamientos de videojuegos y la aplicación notificará al usuario el día pertinente. GameCore utiliza la API más potente de videojuegos, IGDB, para obtener siempre los datos más actuales y fiables.",
+        descripcionEs: "Aplicación de gestión de videojuegos desarrollada en Android. La aplicación permite a los usuarios crear una cuenta y buscar videojuegos para añadir a su colección, dichos videojuegos podrán ser valorados, compartidos y etiquetados, también hay un calendario donde se podrán apuntar lanzamientos de videojuegos y la aplicación notificará al usuario el día pertinente. GameCore utiliza la API más potente de videojuegos, IGDB, para obtener siempre los datos más actuales y fiables.",
         tecnologias: "Java, Android Studio, Gradle, Volley HTTP, Glide, SQLite.",
         imgComp: GameCore1.src, 
         imgPhone: GameCore2.src, 
-        liveDemoUrl: "https://twitter-clone-samuel96.netlify.app/", 
-        repoUrl: "https://www.youtube.com/watch?v=CwD2z7LL0Qw"
+        liveDemoUrl: "https://www.youtube.com/watch?v=CwD2z7LL0Qw", 
+        repoUrl: "https://github.com/Samuel-96/GameCore"
     },
 ]
 
