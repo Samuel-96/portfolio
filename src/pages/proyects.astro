@@ -13,7 +13,7 @@ const gamecoreAndroid = data[4];
 
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
-    <div>
+    <div class="fadeIn fadeOut">
         <Proyecto comp={bookhub.imgComp} phone={bookhub.imgPhone} nombreProyecto={bookhub.nombre} descripcion={bookhub.descripcionEs} tecnologias={bookhub.tecnologias} liveDemo={bookhub.liveDemoUrl} repositorio={bookhub.repoUrl}/>
         <Proyecto comp={meteolocal.imgComp} phone={meteolocal.imgPhone} nombreProyecto={meteolocal.nombre} descripcion={meteolocal.descripcionEs} tecnologias={meteolocal.tecnologias} liveDemo={meteolocal.liveDemoUrl} repositorio={meteolocal.repoUrl}/>
         <Proyecto comp={webcam.imgComp} nombreProyecto={webcam.nombre} descripcion={webcam.descripcionEs} tecnologias={webcam.tecnologias} repositorio={webcam.repoUrl}/>
@@ -21,3 +21,33 @@ const gamecoreAndroid = data[4];
         <Proyecto comp={gamecoreAndroid.imgComp} phone={gamecoreAndroid.imgPhone} nombreProyecto={gamecoreAndroid.nombre} descripcion={gamecoreAndroid.descripcionEs} tecnologias={gamecoreAndroid.tecnologias} liveDemo={gamecoreAndroid.liveDemoUrl} repositorio={gamecoreAndroid.repoUrl}/>
     </div>
 </Layout>
+
+<style>
+
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fadeIn {
+      animation: fadeInAnimation 1s ease-out;
+    }
+    
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    </style>

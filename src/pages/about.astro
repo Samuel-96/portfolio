@@ -20,7 +20,7 @@ import Android from "../assets/android.png";
 
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
-    <div class="flex flex-col items-center ">
+    <div class="flex flex-col items-center fadeIn fadeOut">
         <div class="flex gap-5 flex-col justify-center rounded w-2/4 font-inte mt-10 p-3">
             <h1 class="text-3xl text-especial uppercase">Sobre mí 🖐️</h1>
             <div class="flex">
@@ -96,3 +96,33 @@ import Android from "../assets/android.png";
         <Footer />
     </div>
 </Layout>
+
+<style>
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s ease-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
