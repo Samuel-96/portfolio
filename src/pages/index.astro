@@ -13,9 +13,9 @@ import Yo from "../assets/imagen.jpg"
 		<div class="flex flex-col items-center text-center">
 			<img class="w-auto h-72 rounded-3xl" src={Yo.src} alt="imagen personal">
 
-			<div class="text-3xl mt-5 uppercase font-bold flex flex-col gap-2">
+			<div class="text-3xl mt-5 uppercase font-bold flex flex-col gap-2 typewriter">
 				<h1>Hola, soy</h1>
-				<p class="text-verde border-b-2 pb-2">Samuel Amat</p>
+				<h1 class="text-verde border-b-2 pb-2">Samuel Amat</h1>
 			</div>
 
 			<div class=" w-1/2 m-10 text-xl">
@@ -35,6 +35,28 @@ import Yo from "../assets/imagen.jpg"
 
 <style>
 
+.typewriter h1:nth-child(2) {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 
 @keyframes fadeInAnimation {
   from {
