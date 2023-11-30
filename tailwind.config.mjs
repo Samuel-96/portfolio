@@ -8,7 +8,8 @@ export default {
 				inter: ['Inter Variable', 'sans-serif', ...defaultTheme.fontFamily.sans],
 			  },
 			colors: {
-				verde: "#58d68d"
+				verde: "#58d68d",
+				especial: "#264653"
 			},
 		},
 	},

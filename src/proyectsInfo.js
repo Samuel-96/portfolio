@@ -43,7 +43,7 @@ const data = [
 
     {
         nombre: "Twitter clone",
-        descripcionEs: "Página web desarrollada para mejorar mis habilidades con Tailwind CSS y Astro.",
+        descripcionEs: "Página web desarrollada para mejorar mis habilidades con Tailwind CSS y Astro. Hay tanto versión de escritorio como móvil.",
         tecnologias: "Astro, Tailwind CSS, JavaScript.",
         imgComp: TwitterComp.src, 
         imgPhone: TwitterPhone.src, 

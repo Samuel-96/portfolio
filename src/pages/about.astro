@@ -22,22 +22,17 @@ import Android from "../assets/android.png";
 	<Nav />
     <div class="flex flex-col items-center ">
         <div class="flex gap-5 flex-col justify-center rounded w-2/4 font-inte mt-10 p-3">
-            <h1 class="text-3xl">Sobre mí 🖐️</h1>
+            <h1 class="text-3xl text-especial uppercase">Sobre mí 🖐️</h1>
             <div class="flex">
-                <div class=" text-xl flex flex-col">  
-                    <p>Me considero un apasionado por la innovación y el aprendizaje continuo en el mundo de la tecnología. Mi trayectoria incluye proyectos desafiantes donde he tenido la oportunidad de colaborar con equipos talentosos y contribuir al éxito de diversas iniciativas.</p>
-                    <br>
-                    <p>Gracias a mi pasión por el mundo de la programación he aprendido de manera autodidacta conceptos fundamentales de ingeniería informática como algoritmos y estructuras de datos, arquitecturas de software, patrones de diseño...</p>
-                    <br>
-                    <p>En cuanto a mis gustos soy un completo apasionado por la lectura, me gusta todo tipo de lectura pero en general la fantasía y la ciencia ficción son mis géneros favoritos, sagas como El Archivo de las Tormentas, The Expanse o Canción de Hielo y Fuego se encuentran entre mis obras favoritas. Otra de mis grandes pasiones son los videojuegos, donde he disfrutado y sigo haciéndolo con sagas como Dark Souls, Final Fantasy o Xenoblade.</p>
-                </div>
-
-                <div>
-                    <img class="h-52" src="" alt="">
+                <div class=" text-xl flex gap-8 flex-col">  
+                    <p>Gracias a mi pasión por el mundo de la programación, he aprendido de manera autodidacta conceptos fundamentales de ingeniería informática, como <i class="text-verde">algoritmos</i> y <i class="text-verde">estructuras de datos</i>, <i class="text-verde">arquitecturas de software</i>, <i class="text-verde">patrones de diseño</i>, etc. Todos estos conceptos me han sido muy útiles para estar a la altura
+                        de los estándares actuales de la industria y poder escribir <i class="text-verde">código limpio</i>, <i class="text-verde">escalable</i> y <i class="text-verde">fácil de mantener</i>.
+                    </p>
+                    <p>En cuanto a mis gustos soy un completo apasionado por la lectura, me gusta todo tipo de lectura pero en general la fantasía y la ciencia ficción son mis géneros favoritos. También soy un gran aficionado a los videojuegos y en parte gracias a ellos he desarrollado un gusto por la tecnología y la informática.</p>
                 </div>
             </div>
 
-            <h1 class="text-3xl ">Mi stack tecnológico 💻</h1>
+            <h1 class="text-3xl uppercase text-especial">Mi stack tecnológico 💻</h1>
             <div class="grid gap-5 grid-cols-6 p-10 bg-stone-800 rounded shadow-lg text-white">  
                 <div class="flex flex-col items-center text-center">
                     <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={JS.src} alt="">
@@ -96,8 +91,6 @@ import Android from "../assets/android.png";
                     <p>Android</p>
                 </div>
             </div>
-
-            
         </div>
         <button class="text-black font-bold text-xl bg-verde p-2 rounded hover:scale-110 transition-all ease-in-out m-5"><a href="/proyects">¡Echa un vistazo a mis proyectos!</a></button>
         <Footer />
