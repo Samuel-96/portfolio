@@ -21,10 +21,10 @@ import Android from "../assets/android.png";
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
     <div class="flex flex-col items-center fadeIn fadeOut">
-        <div class="flex gap-5 flex-col justify-center rounded w-2/4 font-inte mt-10 p-3">
-            <h1 class="text-3xl text-especial uppercase">Sobre mí 🖐️</h1>
+        <div class="flex gap-5 flex-col justify-center rounded md:w-2/4 font-inte mt-10 p-10 md:p-3">
+            <h1 class="md:text-3xl text-xl text-especial uppercase">Sobre mí 🖐️</h1>
             <div class="flex">
-                <div class=" text-xl flex gap-8 flex-col">  
+                <div class="md:text-xl text-lg flex gap-8 flex-col">  
                     <p>Gracias a mi pasión por el mundo de la programación, he aprendido de manera autodidacta conceptos fundamentales de ingeniería informática, como <i class="text-verde">algoritmos</i> y <i class="text-verde">estructuras de datos</i>, <i class="text-verde">arquitecturas de software</i>, <i class="text-verde">patrones de diseño</i>, etc. Todos estos conceptos me han sido muy útiles para estar a la altura
                         de los estándares actuales de la industria y poder escribir <i class="text-verde">código limpio</i>, <i class="text-verde">escalable</i> y <i class="text-verde">fácil de mantener</i>.
                     </p>
@@ -33,7 +33,7 @@ import Android from "../assets/android.png";
             </div>
 
             <h1 class="text-3xl uppercase text-especial">Mi stack tecnológico 💻</h1>
-            <div class="grid gap-5 grid-cols-6 p-10 bg-stone-800 rounded shadow-lg text-white">  
+            <div class="grid gap-3 md:gap-5 grid-cols-3 md:grid-cols-6 p-10 bg-stone-800 rounded shadow-lg text-white">  
                 <div class="flex flex-col items-center text-center">
                     <img class="w-16 h-16 hover:scale-110 transition-all ease-in-out" src={JS.src} alt="">
                     <p>JavaScript</p>
@@ -92,12 +92,53 @@ import Android from "../assets/android.png";
                 </div>
             </div>
         </div>
-        <button class="text-black font-bold text-xl bg-verde p-2 rounded hover:scale-110 transition-all ease-in-out m-5"><a href="/proyects">¡Echa un vistazo a mis proyectos!</a></button>
+        <button class=""><a href="/proyects">¡Echa un vistazo a mis proyectos!</a></button>
         <Footer />
     </div>
 </Layout>
 
 <style>
+
+
+button {
+ border: 0.125em solid #1A1A1A;
+ border-radius: 0.9375em;
+ box-sizing: border-box;
+ cursor: pointer;
+ display: inline-block;
+ font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+ font-size: 19px;
+ font-weight: 600;
+ line-height: normal;
+ margin: 5px;
+ min-height: 3.75em;
+ min-width: 0;
+ outline: none;
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+ transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ will-change: transform;
+}
+
+button:disabled {
+ pointer-events: none;
+}
+
+button:hover {
+ color: #fff;
+ background-color: #1A1A1A;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ transform: translateY(-2px);
+}
+
+button:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
 
 @keyframes fadeInAnimation {
   from {

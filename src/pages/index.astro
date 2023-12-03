@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from "../components/Nav.astro";
 import Footer from '../components/Footer.astro';
-import Light from "../assets/light-theme.png";
 import Yo from "../assets/imagen.jpg"
 ---
 
@@ -18,14 +17,14 @@ import Yo from "../assets/imagen.jpg"
 				<h1 class="text-verde border-b-2 pb-2">Samuel Amat</h1>
 			</div>
 
-			<div class=" w-1/2 m-10 text-xl">
+			<div class=" md:w-1/2 m-10 text-lg md:text-xl">
 				<p>¡Muy buenas! Soy Samuel, un desarrollador Fullstack ubicado en España con experiencia en la creación de aplicaciones web y de escritorio. 
             Me apasiona utilizar tecnologías como HTML5, CSS3, JavaScript, React, C#, y Java para desarrollar soluciones robustas y eficientes. 
             Puedes echar un vistazo a mis proyectos para conocer el stack tecnológico que utilizo.
         </p>
 			</div>
 
-			<button class="text-black font-bold text-xl bg-verde p-2 rounded hover:scale-110 transition-all ease-in-out"><a href="/about">Conoce más sobre mí</a></button>
+			<button class=""><a href="/about">Conoce más sobre mí</a></button>
 		</div>
 	
 		<Footer />
@@ -34,6 +33,46 @@ import Yo from "../assets/imagen.jpg"
 </Layout>
 
 <style>
+
+button {
+ border: 0.125em solid #1A1A1A;
+ border-radius: 0.9375em;
+ box-sizing: border-box;
+ cursor: pointer;
+ display: inline-block;
+ font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+ font-size: 19px;
+ font-weight: 600;
+ line-height: normal;
+ margin: 0;
+ min-height: 3.75em;
+ min-width: 0;
+ outline: none;
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+ transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ will-change: transform;
+}
+
+button:disabled {
+ pointer-events: none;
+}
+
+button:hover {
+ color: #fff;
+ background-color: #1A1A1A;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ transform: translateY(-2px);
+}
+
+button:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
 
 .typewriter h1:nth-child(2) {
   overflow: hidden;
