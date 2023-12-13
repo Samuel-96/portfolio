@@ -4,6 +4,7 @@ import Nav from "../components/Nav.astro";
 import Proyecto from "../components/Proyecto.astro";
 import data from "../proyectsInfo";
 import Footer from "../components/Footer.astro";
+import "../styles/global.css"
 
 const bookhub = data[0];
 const meteolocal = data[1];
@@ -14,44 +15,25 @@ const gamecoreAndroid = data[4];
 
 <Layout title="Samuel Amat - Full Stack Developer">
 	<Nav />
-    <div class="fadeIn fadeOut">
-        <Proyecto comp={bookhub.imgComp} phone={bookhub.imgPhone} nombreProyecto={bookhub.nombre} descripcion={bookhub.descripcionEs} tecnologias={bookhub.tecnologias} liveDemo={bookhub.liveDemoUrl} repositorio={bookhub.repoUrl}/>
-        <Proyecto comp={meteolocal.imgComp} phone={meteolocal.imgPhone} nombreProyecto={meteolocal.nombre} descripcion={meteolocal.descripcionEs} tecnologias={meteolocal.tecnologias} liveDemo={meteolocal.liveDemoUrl} repositorio={meteolocal.repoUrl}/>
-        <Proyecto comp={webcam.imgComp} nombreProyecto={webcam.nombre} descripcion={webcam.descripcionEs} tecnologias={webcam.tecnologias} repositorio={webcam.repoUrl}/>
-        <Proyecto comp={twitter.imgComp} phone={twitter.imgPhone} nombreProyecto={twitter.nombre} descripcion={twitter.descripcionEs} tecnologias={twitter.tecnologias} liveDemo={twitter.liveDemoUrl} repositorio={twitter.repoUrl}/>
-        <Proyecto comp={gamecoreAndroid.imgComp} phone={gamecoreAndroid.imgPhone} nombreProyecto={gamecoreAndroid.nombre} descripcion={gamecoreAndroid.descripcionEs} tecnologias={gamecoreAndroid.tecnologias} liveDemo={gamecoreAndroid.liveDemoUrl} repositorio={gamecoreAndroid.repoUrl}/>
+    <div class="fadeInLeft">
+      <Proyecto comp={bookhub.imgComp} phone={bookhub.imgPhone} nombreProyecto={bookhub.nombre} descripcion={bookhub.descripcionEs} tecnologias={bookhub.tecnologias} liveDemo={bookhub.liveDemoUrl} repositorio={bookhub.repoUrl}/>
     </div>
+
+    <div class="fadeInRight">
+      <Proyecto comp={meteolocal.imgComp} phone={meteolocal.imgPhone} nombreProyecto={meteolocal.nombre} descripcion={meteolocal.descripcionEs} tecnologias={meteolocal.tecnologias} liveDemo={meteolocal.liveDemoUrl} repositorio={meteolocal.repoUrl}/>
+    </div>
+    
+    <div class="fadeInLeft">
+      <Proyecto comp={webcam.imgComp} nombreProyecto={webcam.nombre} descripcion={webcam.descripcionEs} tecnologias={webcam.tecnologias} repositorio={webcam.repoUrl}/>
+    </div>
+    
+    <div class="fadeInRight">
+      <Proyecto comp={twitter.imgComp} phone={twitter.imgPhone} nombreProyecto={twitter.nombre} descripcion={twitter.descripcionEs} tecnologias={twitter.tecnologias} liveDemo={twitter.liveDemoUrl} repositorio={twitter.repoUrl}/>
+    </div>
+    
+    <div class="fadeInLeft">
+      <Proyecto comp={gamecoreAndroid.imgComp} phone={gamecoreAndroid.imgPhone} nombreProyecto={gamecoreAndroid.nombre} descripcion={gamecoreAndroid.descripcionEs} tecnologias={gamecoreAndroid.tecnologias} liveDemo={gamecoreAndroid.liveDemoUrl} repositorio={gamecoreAndroid.repoUrl}/>
+    </div>
+
     <Footer />
 </Layout>
-
-<style>
-
-    @keyframes fadeInAnimation {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .fadeIn {
-      animation: fadeInAnimation 1s ease-out;
-    }
-    
-    @keyframes fadeInOut {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-    
-    </style>
