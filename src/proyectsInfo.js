@@ -12,11 +12,13 @@ import TwitterPhone from "./assets/screentwitter-phone.png"
 import GameCore1 from "./assets/gamecore1.png"
 import GameCore2 from "./assets/gamecore2.png"
 
+import CvBuilder from "./assets/cv-builder.png"
+
 const data = [
     {
         nombre: "BookHub",
         descripcionEs: "Página web desarrollada con React que implementa la API de Google Books y un sistema de compra. Utilización de hooks y librerías de React como router, context etc.",
-        tecnologias: "React, JSX, React router, Tailwind CSS.",
+        tecnologias: "React, JSX, React router, Tailwind CSS, Vite.",
         imgComp: BookhubComp.src,
         imgPhone: BookhubPhone.src,
         liveDemoUrl: "https://bookstore-top.netlify.app/",
@@ -43,7 +45,7 @@ const data = [
 
     {
         nombre: "Twitter clone",
-        descripcionEs: "Página web desarrollada para mejorar mis habilidades con Tailwind CSS y Astro. Hay tanto versión de escritorio como móvil.",
+        descripcionEs: "Página web desarrollada para demostrar mis habilidades con Tailwind CSS y Astro, simula el aspecto visual de la pantalla de inicio de Twitter. Hay tanto versión de escritorio como móvil.",
         tecnologias: "Astro, Tailwind CSS, JavaScript.",
         imgComp: TwitterComp.src, 
         imgPhone: TwitterPhone.src, 
@@ -59,6 +61,15 @@ const data = [
         imgPhone: GameCore2.src, 
         liveDemoUrl: "https://www.youtube.com/watch?v=CwD2z7LL0Qw", 
         repoUrl: "https://github.com/Samuel-96/GameCore"
+    },
+
+    {
+        nombre: "CV Maker",
+        descripcionEs: "Aplicación web que permite a los usuarios construir currículums de manera fácil e intuitiva",
+        tecnologias: "React, JSX, Vite.",
+        imgComp: CvBuilder.src,
+        liveDemoUrl: "https://creador-curriculum.netlify.app/", 
+        repoUrl: "https://github.com/Samuel-96/cv-generator"
     },
 ]
 

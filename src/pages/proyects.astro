@@ -11,6 +11,7 @@ const meteolocal = data[1];
 const webcam = data[2];
 const twitter = data[3];
 const gamecoreAndroid = data[4];
+const cvmaker = data[5]
 ---
 
 <Layout title="Samuel Amat - Full Stack Developer">
@@ -33,6 +34,10 @@ const gamecoreAndroid = data[4];
     
     <div class="fadeInLeft">
       <Proyecto comp={gamecoreAndroid.imgComp} phone={gamecoreAndroid.imgPhone} nombreProyecto={gamecoreAndroid.nombre} descripcion={gamecoreAndroid.descripcionEs} tecnologias={gamecoreAndroid.tecnologias} liveDemo={gamecoreAndroid.liveDemoUrl} repositorio={gamecoreAndroid.repoUrl}/>
+    </div>
+
+    <div class="fadeInRight">
+      <Proyecto comp={cvmaker.imgComp} nombreProyecto={cvmaker.nombre} descripcion={cvmaker.descripcionEs} tecnologias={cvmaker.tecnologias} liveDemo={cvmaker.liveDemoUrl} repositorio={cvmaker.repoUrl}/>
     </div>
 
     <Footer />
